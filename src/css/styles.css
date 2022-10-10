@@ -275,6 +275,7 @@ body {
   background-color: #fff;
   box-shadow: 0pz 30px 60px #8A959E33;
   font-size: 35px;
+  outline: none;
   border-radius: 10px;
   margin: auto 10px;
 }
