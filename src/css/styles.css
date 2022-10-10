@@ -1,0 +1,322 @@
+@font-face {
+    font-family: "InterRegular";
+    src: local("InterRegular"),
+      url("/public/assets/Inter/static/Inter-Regular.ttf") format("truetype");
+    font-weight: normal;
+  }
+
+@font-face {
+font-family: "InterSemiBold";
+src: local("InterSemiBold"),
+    url("/public/assets/Inter/static/Inter-SemiBold.ttf") format("truetype");
+font-weight: normal;
+}
+
+@font-face {
+  font-family: "InterBold";
+  src: local("InterBold"),
+      url("/public/assets/Inter/static/Inter-Bold.ttf") format("truetype");
+  font-weight: normal;
+  }
+
+body {
+  background-color: rgba(246, 246, 246, 1);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+#social-media-section {
+  margin-top: 40px;
+}
+
+#social-media-section .flex .flex {
+  align-items: center;
+}
+
+#footer-section {
+  margin-top: 5rem;
+}
+
+#social-media-section .flex {
+  justify-content: space-around;
+}
+
+#social-media-section .flex .text-1 {
+  margin-top: 10px;
+  text-align: center;
+  color: #323232;
+  font-size: 14px;
+}
+
+#footer-section .flex {
+  justify-content: space-around;
+}
+
+#footer-section .flex .text-1 {
+  color: #323232;
+  font-size: 14px;
+}
+
+.enter_mob_no_div {
+  margin-top: 40px;
+}
+
+.header {
+    border: 1px solid #00000033;
+}
+
+.header-sub {
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 20px 40px #B0B0B05A ;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 0px 100px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . .";
+  }
+  
+.body {
+    text-align: center;
+}
+
+.align-from-left {
+  margin: auto 2rem auto 3rem;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.theme-text-color {
+  color: #FA6400;
+}
+
+.grey-text-color {
+  color: #404042D9;
+}
+
+.text-1 {
+    font-family: InterRegular;
+    font-size: 20px;
+}
+
+.text-2 {
+    font-family: InterSemiBold;
+    font-size: 17px;
+}
+
+.text-3 {
+    font-family: InterRegular;
+    font-size: 12px;
+}
+
+.text-4 {
+  font-family: InterBold;
+  font-size: 30px;
+}
+
+.whats_ur_number {
+  width: 15rem;
+  text-align: left;
+  margin-top: 35px;
+}
+
+.whats_ur_number_caption {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.whats_ur_number_caption .text-1 {
+  font-size: 15px;
+}
+
+.countryCode {
+  width: 35px;
+  margin-right: 10px;
+}
+
+.phoneNo {
+  width: fit-content;
+}
+
+.countryCode, .phoneNo {
+  background-color: transparent;
+  font-size: 18px;
+  border: 0px;
+  border-bottom: 2px solid #858585;
+}
+
+.phoneNo:focus-visible, .countryCode:focus-visible {
+  border: 0px;
+  border-bottom: 2px solid #FA6400;
+}
+
+#phoneNoContinue {
+  margin-top: 60px;
+}
+
+#phoneNoContinue button {
+  font-size: 17px;
+    background-color: #F3842A;
+    border-radius: 15px;
+    padding: 15px;
+    width: 95%;
+    border: none;
+    color: #fff;
+    margin: auto auto auto 5%;
+}
+
+.white-rectangle-border-div {
+    background-color: rgba(255, 255, 255, 1);
+    display: inline-block;
+    padding: 20px 70px;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.white-circle-border-div {
+  background-color: rgba(255, 255, 255, 1);
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  padding: 15px;
+  border-radius: 100%;
+  box-shadow: 0px 12px 20px #00000027;
+}
+
+/* Round Checkbox */
+.agreeToSocialMediaCheckbox {
+  color: #F3842A;
+  position: relative;
+  margin-right: 8px;
+}
+
+.agreeToSocialMediaCheckbox label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 18px;
+  }
+  
+  .agreeToSocialMediaCheckbox label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 6px;
+    left: 3px;
+    opacity: 0;
+    position: absolute;
+    top: 4px;
+    transform: rotate(-45deg);
+    width: 12px;
+  }
+  
+  .agreeToSocialMediaCheckbox input[type="checkbox"] {
+    visibility: hidden;
+  }
+  
+  .agreeToSocialMediaCheckbox input[type="checkbox"]:checked + label {
+    background-color: #FA6400;
+    border-color: #FA6400;
+  }
+  
+  .agreeToSocialMediaCheckbox input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }
+
+/* OTP VERIFICATION CSS */
+
+.verification-code {
+  max-width: 300px;
+  position: relative;
+  margin:50px auto;
+  text-align:center;
+}
+.control-label{
+  display:block;
+  margin:40px auto;
+  font-weight:900;
+}
+
+.verification-code--inputs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.verification-code--inputs input[type=text] {
+  border: none;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  box-sizing:border-box;
+
+  background-color: #fff;
+  box-shadow: 0pz 30px 60px #8A959E33;
+  font-size: 35px;
+  border-radius: 10px;
+  margin: auto 10px;
+}
+
+/* OTP VERIFICATION CSS */
+
+/* SELECTABLE LIST */
+
+.takingItForList{
+  margin-top: 40px;
+}
+
+.takingItForList div label {
+  background-color: #fff;
+  color: #000;
+  padding: 15px;
+  border-radius: 15px;
+  display: inline-block;
+  width: 100%;
+  height: 2rem;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+
+
+.takingItForList div input[type='radio'] {
+  display: none;
+}
+
+.takingItForList div input:checked + label {
+  background-color: #F3842A;
+  color: #fff;
+}
+
+.takingItForList div input:checked + label::after {
+  content: '';
+  background: #fff url('/public/assets/svgs/round-checkbox.svg') no-repeat;
+  border-radius: 100%;
+  z-index: 35;
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+
+/* SELECTABLE LIST */
